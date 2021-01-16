@@ -6,7 +6,10 @@
     <title>English Level Evaluation Quiz</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Font awesome kit link -->
-    <script src="https://kit.fontawesome.com/ccdbab03d9.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ccdbab03d9.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Google font import -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -25,7 +28,9 @@
         <span>Some Rules of this Quiz</span>
       </div>
       <div class="info-list">
-        <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+        <div class="info">
+          1. You will have only <span>15 seconds</span> per each question.
+        </div>
         <div class="info">2. Once you select your answer, you can't reselect.</div>
         <div class="info">3. You can't select any option once the timer goes off</div>
         <div class="info">4. You can't exit from the Quiz while you're playing</div>
@@ -53,22 +58,50 @@
         <div class="option-list">
           <div class="option">
             <span>Cook</span>
-            <div class="icon" class="fas fa-check"></div>
+            <div class="icon tick"><i class="fas fa-check"></i></div>
           </div>
           <div class="option">
             <span>Ride</span>
-            <div class="icon" <i class="fas fa-check"</i></i>></div>
+            <div class="icon cross"><i class="fas fa-times"></i></div>
           </div>
           <div class="option">
             <span>Car</span>
-            <div class="icon cross" <i class="fas fa-times"</i></i>></div>
           </div>
           <div class="option">
             <span>Complicate</span>
-            <div class="icon" class="fas fa-check"></div>
           </div>
         </div>
       </section>
+      <!-- Quiz Box Footer -->
+      <footer>
+        <div class="total-que">
+          <span>
+            <p>2</p>
+            of
+            <p>5</p>
+            Questions
+          </span>
+        </div>
+        <button class="next-btn">Next Que</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result-box">
+      <div class="icon"><i class="fas fa-crown"></i></div>
+      <div class="complete-text">You've completed the Quiz</div>
+      <div class="score-text">
+        <span
+          >and sorry, You got only
+          <p>2</p>
+          out of
+          <p>5</p></span
+        >
+      </div>
+      <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
     </div>
   </body>
 </html>
