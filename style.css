@@ -356,3 +356,13 @@ footer .next-btn:hover {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+.quiz-line {
+  display: inline-flex;
+  background: black;
+  color: black;
+  border: none;
+  outline: none;
+  width: 30%;
+  height: 2px;
+}
