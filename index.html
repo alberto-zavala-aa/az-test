@@ -4,6 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Level Evaluation Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome kit link -->
+    <script src="https://kit.fontawesome.com/ccdbab03d9.js"></script>
+
+    <!-- Google font import -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- Start Quiz Button -->
+    <div class="start-btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info-box">
+      <div class="info-title">
+        <span>Some Rules of this Quiz</span>
+      </div>
+      <div class="info-list">
+        <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+        <div class="info">2. Once you select your answer, you can't reselect.</div>
+        <div class="info">3. You can't select any option once the timer goes off</div>
+        <div class="info">4. You can't exit from the Quiz while you're playing</div>
+        <div class="info">5. You'll get points on the basis of your correct answers.</div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+
+    <!-- Quiz box -->
+    <div class="quiz-box">
+      <header>
+        <div class="title">English Level Evaluation: A1 - B2</div>
+        <div class="timer">
+          <div class="time-text">Time Left</div>
+          <div class="timer-sec">15</div>
+        </div>
+      </header>
+      <section>
+        <div class="que-text">
+          <span>¿Cómo se dice coche?</span>
+        </div>
+        <div class="option-list">
+          <div class="option">
+            <span>Cook</span>
+            <div class="icon" class="fas fa-check"></div>
+          </div>
+          <div class="option">
+            <span>Ride</span>
+            <div class="icon" <i class="fas fa-check"</i></i>></div>
+          </div>
+          <div class="option">
+            <span>Car</span>
+            <div class="icon cross" <i class="fas fa-times"</i></i>></div>
+          </div>
+          <div class="option">
+            <span>Complicate</span>
+            <div class="icon" class="fas fa-check"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>

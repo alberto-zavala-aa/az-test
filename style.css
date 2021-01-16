@@ -1,1 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
+body {
+  background: white;
+}
+
+.start-btn,
+.info-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* start quiz button styling */
+.start-btn button {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #62dbc8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-btn button:hover {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #9330af;
+  cursor: pointer;
+}
+
+/* Quiz box styling */
+.info-box {
+  display: none;
+  width: 35rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.219);
+}
+
+.info-box .info-title {
+  height: 4rem;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+  padding: 0 35px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info-box .info-list {
+  padding: 15px 35px;
+}
+
+.info-box .info-list .info {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+.info-box .info-list .info span {
+  font-weight: 600;
+  color: lightcoral;
+}
+
+.info-box .buttons {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 35px;
+  border-top: 1px solid lightgrey;
+}
+
+.info-box .buttons button {
+  margin: 0 5px;
+  height: 40px;
+  width: 100px;
+  border: 1px solid #62dbc8;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons button.quit {
+  color: #9330af;
+  border-color: #9330af;
+  background-color: white;
+}
+
+.buttons button.quit:hover {
+  color: white;
+  background: #9330af;
+  border: none;
+}
+
+.buttons button.restart {
+  color: white;
+  background: #62dbc8;
+}
+
+.buttons button.restart:hover {
+  color: white;
+  background: #5ac4b4;
+  border: none;
+}
