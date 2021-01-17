@@ -3,7 +3,7 @@ let questions = [
   {
     numb: 1,
     question: "I'm 18 and my brother is 20, so he's ..... me.",
-    answer: 'Older than',
+    answer: 'older than',
     options: ['the oldest of', 'older than', 'as old as'],
   },
   {

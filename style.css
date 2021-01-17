@@ -22,7 +22,8 @@ body {
 }
 
 .info-box.activeInfo,
-.quiz-box.activeQuiz {
+.quiz-box.activeQuiz,
+.result-box.activeResult {
   z-index: 5;
   opacity: 1;
   pointer-events: auto;
@@ -198,6 +199,14 @@ body {
   user-select: none;
 }
 
+.quiz-box header .time-line {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: #ffd80a;
+}
+
 .quiz-box section {
   padding: 25px 30px 20px 30px;
   background: white;
@@ -248,8 +257,8 @@ section .option-list .option:hover {
 }
 
 .option-list .option .icon.tick {
-  color: #ffd80a;
-  border-color: #ffd80a;
+  color: #62dbc8;
+  border-color: #62dbc8;
   background: white;
 }
 
@@ -257,6 +266,22 @@ section .option-list .option:hover {
   color: rgb(196, 34, 34);
   border-color: rgb(196, 34, 34);
   background: white;
+}
+
+.option-list .option.correct {
+  color: white;
+  border-color: #62dbc8;
+  background: #62dbc8;
+}
+
+.option-list .option.incorrect {
+  color: white;
+  border-color: rgb(196, 34, 34);
+  background: rgb(196, 34, 34);
+}
+
+.option-list .option.disabled {
+  pointer-events: none;
 }
 
 .quiz-box footer {
@@ -283,6 +308,7 @@ footer .total-que span p:first-child {
 }
 
 footer .next-btn {
+  display: none;
   height: 40px;
   padding: 0 13px;
   font-size: 18px;
