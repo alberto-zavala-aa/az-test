@@ -7,8 +7,11 @@ const quizBox = document.querySelector('.quiz-box');
 const timeCount = quizBox.querySelector('.timer .timer-sec');
 const timeLine = quizBox.querySelector('header .time-line');
 const timeOff = quizBox.querySelector('header .time-text');
-
 const optionList = document.querySelector('.option-list');
+const nextBtn = quizBox.querySelector('.next-btn');
+const resultBox = document.querySelector('.result-box');
+const restartQuiz = resultBox.querySelector('.buttons .restart');
+const quitQuiz = resultBox.querySelector('.buttons .quit');
 
 // If Start Quiz Button Clicked
 startBtn.onclick = () => {
@@ -38,11 +41,6 @@ let counterLine;
 let timeValue = 15;
 let widthValue = 0;
 let userScore = 0;
-
-const nextBtn = quizBox.querySelector('.next-btn');
-const resultBox = document.querySelector('.result-box');
-const restartQuiz = resultBox.querySelector('.buttons .restart');
-const quitQuiz = resultBox.querySelector('.buttons .quit');
 
 restartQuiz.onclick = () => {
   quizBox.classList.add('activeQuiz');
